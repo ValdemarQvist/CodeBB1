@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+    - Base      : kobuki
+    - Stacks    : hexagons
+-->
+<robot name="turtlebot" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find sick_tim)/urdf/sick_tim571.urdf.xacro"/>
+  <xacro:include filename="$(find realsense2_description)/urdf/_d435.urdf.xacro" />
+  <xacro:include filename="$(find turtlebot_description)/urdf/turtlebot_common_library.urdf.xacro" />
+  <xacro:include filename="$(find kobuki_description)/urdf/kobuki.urdf.xacro" />
+  <xacro:include filename="$(find turtlebot_description)/urdf/stacks/hexagons.urdf.xacro"/>
+    
+  <kobuki/>
+  <stack_hexagons parent="base_link"/>
+  <sick_tim571 name="laser_1" ros_topic="scan_1" z_offset="0.46" y_offset="0.15" yaw="1.57" />
+  <sick_tim571 name="laser_2" ros_topic="scan_2" z_offset="0.46" y_offset="-0.15" yaw="-1.57" />
+  <sensor_d435 parent="base_link">
+    <origin xyz="0 0 1.30" rpy="0 0 3.14"/>
+  </sensor_d435>
+</robot>

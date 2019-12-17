@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="2">
+  
+  <name>bilkabot_move</name>
+  <version>1.0.0</version>
+  <description>The bilkabot_move package</description>
+
+  <maintainer email="ibrahim.jad@outlook.dk">Ibrahim Jad Masri</maintainer>
+  <license>GPLv3</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>actionlib</build_depend>
+  <build_depend>move_base_msgs</build_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>actionlib</exec_depend>
+  <exec_depend>move_base_msgs</exec_depend>
+
+</package>

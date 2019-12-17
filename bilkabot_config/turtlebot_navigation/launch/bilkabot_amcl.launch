@@ -1,0 +1,15 @@
+<launch>
+  <arg name="map_file" default="$(env TURTLEBOT_MAP_FILE)"/>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)">
+    <remap from="frame_id" to="map" />
+  </node>
+
+  <!-- AMCL -->
+  <include file="$(find turtlebot_navigation)/launch/includes/amcl/sick_amcl.launch.xml">
+    <arg name="scan_topic" value="scan_1" />
+  </include>
+
+  <!-- Move base -->
+  <include file="$(find turtlebot_navigation)/launch/includes/move_base.launch.xml"/>
+
+</launch>

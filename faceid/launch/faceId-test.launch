@@ -1,0 +1,9 @@
+<launch>
+
+  <node name="faceid_node" pkg="faceid" type="faceid_node"
+    <param name= "_image_transport:=compressed"/>
+     />
+
+  <node name="openni2_camera_node" pkg="openni2_camera" type="openni2_camera_node" />
+
+</launch>
