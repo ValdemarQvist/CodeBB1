@@ -4,7 +4,7 @@ In this repository several algorithms, which has been used to control the turtle
 
 **NB: Hover the mouse over the pictures to show the caption**
 
-## 1: Kalman Learning Algorithm 
+## 1: Kalman filter
 [Click here to read in depth about the Kalman Algorithm](http://web.eecs.utk.edu/~leparker/Courses/CS594-fall08/Lectures/Nov-20-Localization-Mapping-III.pdf?fbclid=IwAR09qqvL_XFGQxKLONP_L07A6dernhlGAMSVIidJq074ANnLy4_oJM5IV6g)
 
 ![Rudolf E. Kalman](https://github.com/ValdemarQvist/CodeBB1/blob/master/pictures/1.PNG "Rudolf E. Kalman")
@@ -14,13 +14,13 @@ In this repository several algorithms, which has been used to control the turtle
 This algorithm is used to be implemented in the test to measure the deviations in the outputs when it is applied or when it is not. It is also used for us to get a better understanding on how the algorithm works, since it is implemented in the two major algorithms in this project - face and leg detection.
 
 
-## 2: Bilka_config-master
+## 2: Bilka_config
 
 ![Gmapping](https://github.com/ValdemarQvist/CodeBB1/blob/master/pictures/Capture.PNG "Gmapping")
 
 This algorithm is used for the configuration of the sensors setup, the launch files, AMCL and Gmapping. This is to make it easier for us to bringup the turtlebot and modulate the different aformentioned files.
 
-## 3:Bilka_move-master
+## 3:Bilka_move
 [Click here to read in depth about the Move_Base](http://wiki.ros.org/move_base)
 
 *This algorithm is based on ROS' MOVE_BASE*
@@ -38,7 +38,7 @@ This algorithm is used to navigate through BILKA while avoiding dynamic and stat
 This algorithm handles the detection of the face of a costumer, so that the tracking of the person can be realised. It can be used in dynamic or static scenarios to detect the features of the face, which can be read in the report. 
 The project uses a RGB-D camera to capture the different features of the guided costumer.
 
-## 5:people_legs-master
+## 5:people_legs
 
 ![Rviz Visualisation of the leg_detector](https://github.com/ValdemarQvist/CodeBB1/blob/master/pictures/rviz.png "Rviz Visualisation of the leg_detector")
 
